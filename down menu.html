@@ -4,13 +4,12 @@
         <meta charset="utf-8">
         <meta name="author" content="idriss khattabi">
         <meta name="description" content="down menu of let's read">
-        <link rel="stylesheet" href="">
         <title> let's read </title>
         <style>
             body{
                 background-image: url(reading%20woman.png);
-                padding: 0;
-                margin: 0;
+                padding: 0px;
+                margin: 0px;
                 color: aliceblue;
                 font-size:20px;
             }
@@ -18,8 +17,8 @@
                 margin-right: 120px;
                 margin-left: 80px;
             }
-            #nav{
-                text-align: center;
+            #nav {
+                margin-top: -25px;
             }
             #nav li {
                 display:inline-block;
@@ -56,14 +55,12 @@
                 width: 200px;
             }
             #nav li:hover .second-nav ul{
-                display: block;
-                margin: 10px;
+                display: block;  
             }
             #nav li:hover .second-nav ul li{
                 width: 100px;
                 border-bottom: 1px solid #fff;
                 border-radius: 0px;
-                text-align: right;
             }
             #nav li:hover .second-nav ul li:last-child{
                 border-bottom: none;
@@ -73,8 +70,7 @@
             }
             .search {
                 text-align: center;
-                padding-top: 150px;
-                margin: 5px;
+                padding-top: 200px;
                 color: black;
             }
             .search p{
@@ -83,12 +79,32 @@
             }
             .search input {
                 width: 600px;
-                height: 30px;
+                height: 40px;
                 font-size: 30px;
                 border: 2px solid black ;
             }
             .search i{
                 font-size: 30px;
+            }
+            .third-nav{
+                display: none;
+            }
+            .nav3:hover .third-nav{
+                display: block;
+                position: absolute;
+                background-color: #2bab0d;
+                margin-left:100px;
+                margin-top: -50px;
+                width: 200px;
+            }
+            .nac3:hover .third-nav ul{
+                display: block;  
+            }
+            .nav3:hover .third-nav ul li{
+                width: 100px;
+                border-bottom: 1px solid #fff;
+                border-radius: 0px;
+                color: black;
             }
         </style>
         <script src="https://kit.fontawesome.com/43fe389036.js" crossorigin="anonymous"></script>
@@ -108,7 +124,7 @@
                              <ul>
                                  <li><a href="#"><i class="fas fa-globe-europe"></i>عالميين</a></li>
                                  <li><a href="#"><i class="fas fa-graduation-cap"></i>في الادب</a></li>
-                                 <li><a href="#"><i class="fas fa-user-ninja"></i>في الروايات الوليسية</a></li>
+                                 <li><a href="#"><i class="fas fa-user-ninja"></i>في الروايات البوليسية</a></li>
                                  <li><a href="#"><i class="fas fa-chess-queen"></i> في تطوير الذات </a></li>
                              </ul> 
                         </div>    
@@ -127,12 +143,26 @@
                     <li><a href="#"><i class="fas fa-book-reader"></i>  روايات عالمية  </a>
                         <div class="second-nav">
                             <ul>
-                                <li><a href="#"><i class="fas fa-globe"></i>روايات اجنبية</a></li>
-                                <li><a href="#"><i class="fas fa-kaaba"></i>روايات عربية</a></li>
-                                <li><a href="#"><i class="fas fa-heart"></i>روايات رمانسية</a></li>
-                                <li><a href="#"><i class="fas fa-user-ninja"></i>روايات بوليسية</a></li>
-                                <li><a href="#"><i class="fas fa-graduation-cap"></i>روايات ادبية</a></li>
-                                <li><a href="#"><i class="fas fa-chess-queen"></i>تطوير الذات</a></li>
+                                <li class="nav3"><a href="#"><i class="fas fa-globe"></i>روايات اجنبية</a>
+                                    <div class="third-nav"> 
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-heart"></i>روايات رمانسية</a></li>
+                                            <li><a href="#"><i class="fas fa-user-ninja"></i>روايات بوليسية</a></li>
+                                            <li><a href="#"><i class="fas fa-graduation-cap"></i>روايات ادبية</a></li>
+                                            <li><a href="#"><i class="fas fa-chess-queen"></i>تطوير الذات</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav3"><a href="#"><i class="fas fa-kaaba"></i>روايات عربية</a>
+                                    <div class="third-nav"> 
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-heart"></i>روايات رمانسية</a></li>
+                                            <li><a href="#"><i class="fas fa-user-ninja"></i>روايات بوليسية</a></li>
+                                            <li><a href="#"><i class="fas fa-graduation-cap"></i>روايات ادبية</a>   </li>
+                                            <li><a href="#"><i class="fas fa-chess-queen"></i>تطوير الذات</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
                             </ul>    
                         </div>
                     </li>
@@ -142,8 +172,8 @@
             </div>
         </header>
         <div class="search">
-            <p><strong> ابحث عن كتاب لك </strong></p>
-            <input type="search" name="search" placeholder="ابحث هنا ..."><i class="fas fa-search"></i>
+            <p><strong>ابحث عن كتاب لك</strong></p>
+            <input type="search" name="search" placeholder="ابحث هنا ...."><i class="fas fa-search"></i>
         </div>
     </body>
 </html>
